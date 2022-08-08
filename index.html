@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinematic Equations Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="displacementRadio" name="variables" checked>
+  <label for="displacementRadio">Displacement</label>
+
+  <input type="radio" id="accelerationRadio" name="variables">
+  <label for="accelerationRadio">Acceleration</label>
+
+  <input type="radio" id="timeRadio" name="variables" disabled>
+  <label for="timeRadio">Time</label>
+
+  <input type="radio" id="initialVelocityRadio" name="variables">
+  <label for="initialVelocityRadio">Initial Velocity</label>
+
+  <input type="radio" id="finalVelocityRadio" name="variables">
+  <label for="finalVelocityRadio">Final Velocity</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(a) Acceleration</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(t) Time</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(Vi) Initial Velocity</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(Vf) Final Velocity</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button> 
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
